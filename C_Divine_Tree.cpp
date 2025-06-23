@@ -28,18 +28,8 @@ void solve(istream &cin, ostream &cout) {
     for(int i=1;i<=n;i++){
         v[i-1]=i;
     }
-    reverse(v.begin(),v.end());
-    int sum=0;int idx=0;
-    for(int i=0;i<n;i++){
-        if((sum+v[i]+n-i-1)==m){
-            idx=i;
-            break;
-        }else{
-            sum+=v[i];
-        }
-    }
-    swap(v[0],v[idx]);
     
+
     
 
 
